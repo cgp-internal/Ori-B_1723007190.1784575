@@ -1,0 +1,41 @@
+{
+    "app.py": {
+        "description": "Main entry point for the Flask web application. Sets up the Flask server, defines routes, and starts the server.",
+        "dependencies": {
+            "templates/index.html": [],
+            "models/pip_runner.py": [
+                "run_pip"
+            ]
+        }
+    },
+    "templates/index.html": {
+        "description": "HTML file containing a user input form",
+        "exposes": [
+            "index.html"
+        ]
+    },
+    "models/pip_runner.py": {
+        "description": "Contains the implementation for the run_pip method",
+        "exposes": [
+            "run_pip"
+        ]
+    },
+    "static/style.css": {
+        "description": "Basic CSS styles for the user interface"
+    },
+    "venv": {
+        "description": "Virtual environment for the project"
+    },
+    "requirements.txt": {
+        "description": "List of dependencies required for the project"
+    },
+    "run.sh": {
+        "description": "bash run script, should: install Python, create venv, install Flask, run the Flask application"
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    },
+    ".gitignore": {
+        "description": ".gitignore with Python cache files and venv"
+    }
+}
